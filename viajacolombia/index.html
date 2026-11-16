@@ -3,13 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sitios turísticos</title>
+  <title>Viaja Colombia · Guía de Turismo</title>
   <link rel="stylesheet" href="css/styles.css">
-
+  <script src="scripts/main.js" defer></script>
 </head>
-<body style="font-family:sans-serif; text-align:center; padding:2rem;">
-  <h1 style="color:#4b2e2a">Sitios Turísticos</h1>
-  <p>Bienvenidos a la guía de turismo.</p>
-</body>
+<body>
 
+  <header>
+    <div class="contenedor header__contenido">
+      <a href="#inicio" class="logo">Viaja Colombia</a>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-principal">
+        <span class="linea"></span>
+        <span class="linea"></span>
+        <span class="linea"></span>
+      </button>
+
+      <div class="nav-overlay" aria-hidden="true"></div>
+
+      <nav id="nav-principal">
+        <ul class="nav__lista">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#destinos">Destinos</a></li>
+          <li><a href="#contacto">Planifica</a></li>
+          <li><a href="../index.html" class="nav__destacado">Café de Origen</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="contenedor hero__contenido">
+        <div class="hero__texto">
+          <h1>Descubre la magia de Colombia</h1>
+          <p>Desde playas caribeñas y selvas amazónicas hasta pueblos coloniales en los Andes. Encuentra rutas, consejos y experiencias inolvidables.</p>
+          <a href="#destinos" class="boton">Explorar destinos</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="destinos" id="destinos">
+      <div class="contenedor">
+        <h2>Destinos imperdibles</h2>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <img src="https://placehold.co/600x600/0f4c5c/f4f8f9.png?text=Cartagena" alt="Murallas y arquitectura colonial en Cartagena">
+            <div class="tarjeta__cuerpo">
+              <h3>Cartagena de Indias</h3>
+              <p>Historia viva entre murallas coloniales, calles coloridas y playas cristalinas en el Caribe.</p>
+              <span class="etiqueta">Caribe · Cultura y Playa</span>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="https://placehold.co/600x600/1b6ca8/f4f8f9.png?text=Valle+del+Cocora" alt="Palmas de cera en el Valle del Cocora">
+            <div class="tarjeta__cuerpo">
+              <h3>Valle del Cocora</h3>
+              <p>Camina entre las palmas de cera más altas del mundo en el corazón del Paisaje Cultural Cafetero.</p>
+              <span class="etiqueta">Quindío · Naturaleza y Café</span>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="https://placehold.co/600x600/0f4c5c/f4f8f9.png?text=Parque+Tayrona" alt="Playas y selva en el Parque Tayrona">
+            <div class="tarjeta__cuerpo">
+              <h3>Parque Nacional Tayrona</h3>
+              <p>Bahías de arena blanca rodeadas por la selva húmeda al pie de la Sierra Nevada.</p>
+              <span class="etiqueta">Magdalena · Ecoturismo</span>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="https://placehold.co/600x600/1b6ca8/f4f8f9.png?text=Guatape" alt="Piedra del Peñol y embalse de Guatapé">
+            <div class="tarjeta__cuerpo">
+              <h3>Guatapé y El Peñol</h3>
+              <p>Sube los 740 escalones del monolito y recorre un pueblo famoso por sus zócalos vibrantes.</p>
+              <span class="etiqueta">Antioquia · Aventura</span>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="https://placehold.co/600x600/0f4c5c/f4f8f9.png?text=Cano+Cristales" alt="Río de los cinco colores Caño Cristales">
+            <div class="tarjeta__cuerpo">
+              <h3>Caño Cristales</h3>
+              <p>Conoce el río de los cinco colores en la Serranía de la Macarena, una maravilla natural única.</p>
+              <span class="etiqueta">Meta · Expedición</span>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="https://placehold.co/600x600/1b6ca8/f4f8f9.png?text=Barichara" alt="Calles empedradas de Barichara">
+            <div class="tarjeta__cuerpo">
+              <h3>Barichara</h3>
+              <p>Arquitectura en piedra tapia pisada, miradores sobre el cañón y caminos reales históricos.</p>
+              <span class="etiqueta">Santander · Patrimonio</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <div class="contenedor">
+        <h2>Planifica tu viaje</h2>
+        <div class="contacto__grid">
+          <div class="contacto__bloque">
+            <h3>Mejor época</h3>
+            <p>Diciembre a Marzo y Julio a Agosto para temporada seca en la mayoría de regiones.</p>
+          </div>
+          <div class="contacto__bloque">
+            <h3>Asesoría Gratuita</h3>
+            <p>WhatsApp +57 310 000 0000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Viaja Colombia · Hecho con mobile first</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
