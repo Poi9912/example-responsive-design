@@ -198,10 +198,9 @@ nav.abierto .nav__lista li:nth-child(2) { transition-delay: 0.16s; }
 nav.abierto .nav__lista li:nth-child(3) { transition-delay: 0.22s; }
 nav.abierto .nav__lista li:nth-child(4) { transition-delay: 0.28s; }
 
-/* Hero Section */
 .hero {
   padding: 3rem 0;
-  background-image: url("../src/img/colombia-hero.jpg");
+  background-image: url("../src/img/hero.jpg");
   background-color: var(--color-primary);
   background-size: cover;
   background-position: center;
